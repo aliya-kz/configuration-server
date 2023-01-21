@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active:
+      - native
+      - git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+
+        git:
+          uri: https://github.com/aliya-kz/configuration-server.git
+          skip-ssl-validation: true
+          default-label: master
+          clone-on-start: true
+
+server:
+  port: ${CONFIG_SERVER_PORT}
