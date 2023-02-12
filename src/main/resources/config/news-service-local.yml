@@ -1,0 +1,4 @@
+jwt:
+  secretKey: somewhereOverTheRainbowBlueBirdsFlyAndTheDreamThatYouDareToOhWhyOhWhCan'tI
+  validityInMilliSeconds: 86400000
+  header: Authorization
